@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/stripes-light.png);
+    background: url(../images/stripes-light.png);
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
@@ -42,19 +42,8 @@ h1 {
     font-size: 1.6em;
     padding: 23px;
     margin-right: auto;
+    max-height: 75px;
 }
-
-/* .about-link {
-    float: right;
-}
-
-.portfolio-link {
-    float: right;
-}
-
-.contact-link {
-    float: right;
-} */
 
 /* body content styling */
 .container {
@@ -134,3 +123,62 @@ textarea {
 }
 
 /* media queries for responsive styling */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    .half-width {
+        width: 100%;
+    }
+    input {
+        margin: 5px;
+        padding: 5px;
+        width: 90%;
+    }
+    textarea {
+        margin: 5px;
+        padding: 5px;
+        width: 90%;
+        height: 200px;
+    }
+    .header-logo {
+        display: none;
+    }
+    .nav-bar {
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        width: 100%;
+        height: 45px;
+        background-color: white;
+        border-bottom: 1px solid #dddddd;
+    }
+} 
+
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .container {
+        width: 90%;
+        height: 100%;
+        padding: 10px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    .half-width {
+        width: 90%;
+    }
+    input {
+        margin: 5px;
+        padding: 5px;
+        width: 90%;
+    }
+    textarea {
+        margin: 5px;
+        padding: 5px;
+        width: 90%;
+        height: 200px;
+    }
+}
